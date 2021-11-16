@@ -1,0 +1,66 @@
+modules are like dictionaries. A python file with some functions or variable in it which you can import and access the function or variables of, with a . operator
+
+module: the key is identifier  and the syntax is .key 
+ 
+
+a class is a way to taking a group of functions and data and place them inside a container so you can access them with . operator.
+ 
+ 
+ objects are like imports. class is a mini module. __init__ means instantiate which creates an object. when you instantiate a class, what you get is called an object. 
+
+
+dict style 
+
+mystuff["apple"]
+
+
+module style
+
+mystuff.apple()
+print(mystuff.tangerine)
+ 
+
+class style
+
+thing=mystuff()
+thing.apple()
+print(thing.tangerine)
+
+
+class tell python to make a new type of thing
+
+object: The most basic type of thing. Any instance of something
+
+instance: what you get when you tell python to create a class.
+
+self: inside the functions in a class, self is a variable of the instance/object being accessed
+
+def: how you define a function inside a class.
+
+inheritance: the concept that one class can inherit inherit traits from another class, much like you and your parents
+
+composition: The concept that a class can be composed of other classes as parts, much like how a car has wheels
+
+attribute: a property classes have that are from composition and are usually variables
+
+is-a: a phrase to say that something inherits from another, as in "salmon" is-a "fish"
+
+has-a: A phrase to say that something is composed of other things or has a trait , as in "salmon" has-a "mouth
+
+
+class X(Y) : make a class named X that is a Y
+
+class X(object) : def __init__ (self, J) ;
+ class X has-a __init__ that takes self and J parameters
+
+class X(object): def M(self, J) ; class X has a function named M that takes self and j parameters
+
+foo = x(Y) ; set foo to an instance of class X
+set Y to an instance of class X
+
+foo.M(J) ; from foo , get the M function, and call it with parameters self, J
+
+foo.k = Q ; from foo, get the K attribute and set it to Q
+
+
+
